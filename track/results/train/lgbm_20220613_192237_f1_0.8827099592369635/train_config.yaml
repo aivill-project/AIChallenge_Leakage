@@ -1,0 +1,36 @@
+DIRECTORY:
+  data: ./data/01_split/
+SEED:
+  random_seed: 42
+MODEL: lgbm
+PARAMETER:
+  lgbm:
+    n_estimators: 2000
+    learning_rate: 0.1
+    feature_fraction: 0.5
+    bagging_fraction: 0.67
+    bagging_freq: 1
+    verbose: 0
+    n_jobs: 6
+    random_state: 42
+    num_class: 5
+  cat:
+    learning_rate: 0.2708160864249968
+    bagging_temperature: 21.368329072358772
+    n_estimators: 30
+    max_depth: 6
+    random_strength: 18
+    colsample_bylevel: 0.5825453457757226
+    l2_leaf_reg: 1.5747445384650815e-05
+    min_child_samples: 4
+    max_bin: 287
+    od_type: IncToDec
+    custom_metric: TotalF1
+LABEL_ENCODING:
+  other: 0
+  noise: 1
+  normal: 2
+  in: 3
+  out: 4
+TRAIN:
+  early_stopping_round: 100

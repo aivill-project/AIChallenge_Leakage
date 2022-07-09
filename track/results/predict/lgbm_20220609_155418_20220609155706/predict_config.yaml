@@ -1,0 +1,12 @@
+DIRECTORY:
+  data: C:\workspace\pythonProject\leakage\model-track\track\data\01_split
+  sample: C:\workspace\pythonProject\leakage\model-track\track\data\sample_submission.csv
+  phase: test
+EXPERIMENT:
+  serial: lgbm_20220609_155418
+LABEL_ENCODING:
+  other: 0
+  noise: 1
+  normal: 2
+  in: 3
+  out: 4
